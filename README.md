@@ -20,6 +20,14 @@ It combines **FPGA pre-processing** (motion gating + resize/letterbox) on **Zybo
 	<img src="docs/system_architecture.svg" alt="Tomo system architecture diagram" width="720" />
 </p>
 
+## 🖼 Example Detection
+
+<p align="center">
+	<img src="docs/1513_png.rf.cb20a3bfba9b055a0360f9ce2b9352b9.jpg" alt="Sample detection - bag localized by YOLOv8n INT8" width="480" />
+	<br/>
+	<em>Sample frame: INT8 YOLOv8n detection (bounding box + class) on a bag candidate.</em>
+</p>
+
 ### FPGA (PL) Role
 | Function | Detail | Rationale |
 |----------|--------|-----------|
