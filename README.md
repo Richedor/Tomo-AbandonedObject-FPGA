@@ -16,6 +16,10 @@ It combines **FPGA pre-processing** (motion gating + resize/letterbox) on **Zybo
 	-> [Outputs: alert, GUI overlay, metric logs]
 ```
 
+<p align="center">
+	<img src="docs/system_architecture.svg" alt="Tomo system architecture diagram" width="720" />
+</p>
+
 ### FPGA (PL) Role
 | Function | Detail | Rationale |
 |----------|--------|-----------|

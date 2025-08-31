@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" font-family="Arial, Helvetica, sans-serif">
+  <style>
+    .box { fill:#eef0ff; stroke:#000; stroke-width:2; }
+    .title { font-size:18px; font-weight:bold; }
+    .text { font-size:14px; }
+    .mono { font-family: monospace; }
+    .arrow { stroke:#000; stroke-width:2; marker-end:url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+
+  <!-- Camera -->
+  <rect class="box" x="40" y="100" width="150" height="100" rx="4" />
+  <text x="115" y="150" text-anchor="middle" class="text">Camera</text>
+  <text x="115" y="170" text-anchor="middle" class="text">Pcam 5C</text>
+
+  <!-- FPGA -->
+  <rect class="box" x="270" y="60" width="300" height="180" rx="6" />
+  <text x="420" y="95" text-anchor="middle" class="title">FPGA (PL)</text>
+  <text x="420" y="125" text-anchor="middle" class="text">Capture MIPI</text>
+  <text x="420" y="150" text-anchor="middle" class="text">MotionGate (WIP)</text>
+  <text x="420" y="175" text-anchor="middle" class="text">Resize + Letterbox</text>
+
+  <!-- PS -->
+  <rect class="box" x="650" y="60" width="300" height="180" rx="6" />
+  <text x="800" y="95" text-anchor="middle" class="title">PS (ARM Cortex-A9)</text>
+  <text x="800" y="125" text-anchor="middle" class="text">YOLOv8n INT8</text>
+  <text x="800" y="150" text-anchor="middle" class="text">NMS</text>
+  <text x="800" y="175" text-anchor="middle" class="text">Abandon logic</text>
+
+  <!-- Outputs -->
+  <rect class="box" x="1000" y="100" width="160" height="100" rx="4" />
+  <text x="1080" y="135" text-anchor="middle" class="text">Outputs</text>
+  <text x="1080" y="155" text-anchor="middle" class="text">Alerts / GUI</text>
+  <text x="1080" y="175" text-anchor="middle" class="text">Logs</text>
+
+  <!-- Arrows -->
+  <line class="arrow" x1="190" y1="150" x2="270" y2="150" />
+  <line class="arrow" x1="570" y1="150" x2="650" y2="150" />
+  <line class="arrow" x1="950" y1="150" x2="1000" y2="150" />
+
+  <!-- Caption -->
+  <text x="600" y="260" text-anchor="middle" class="text">Tomo System Dataflow: Camera ➜ Pre-processing in PL ➜ INT8 Inference & Logic in PS ➜ Alerts & Visualization</text>
+</svg>
