@@ -1,18 +1,13 @@
----
-
 # Tomo — Abandoned Object Detection on FPGA (AOHW25_193)
 
 **Competition:** AMD Open Hardware 2025 — Student / Adaptive Computing  
 **Author:** Miguel Laleye  
 **Supervisor:** Madani Mahdi, PhD  
 
----
-
 ## 🎯 Objective
 Tomo est un système embarqué de détection de **colis abandonnés** (gares, aéroports, lieux publics).  
 Il combine des **pré-traitements FPGA** (motion gating + resize/letterbox) sur **Zybo Z7-10 + Pcam 5C** et une **inférence YOLOv8n quantifiée INT8** sur l’ARM Cortex-A9.  
 
----
 
 ## 🧱 Global Architecture
 ```
@@ -36,7 +31,6 @@ Il combine des **pré-traitements FPGA** (motion gating + resize/letterbox) sur 
 | NMS + logique "abandon" | Temps d’immobilité + absence de personne |
 | GUI / Logs | Démo PC, alertes, métriques |
 
----
 
 ## ✅ Current Status
 - [x] Dataset fusionné (Roboflow Abandoned Objects + COCO subset)  
