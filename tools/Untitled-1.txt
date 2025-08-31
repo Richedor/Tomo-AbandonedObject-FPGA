@@ -1,0 +1,1 @@
+python scripts/tflite_infer.py --model runs/detect/train3/weights/yolov8n_bag_int8.tflite --source test/images --limit 5

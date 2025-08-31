@@ -1,0 +1,18 @@
+path: .
+train: train/images
+val: valid/images
+test: test/images  # retirer si pas d'images de test
+
+names:
+  0: objet  # renommez si besoin
+
+# Métadonnées d'origine Roboflow (optionnel)
+roboflow:
+  workspace: abandoned-object-t0t8l
+  project: abandoned-object-detection-u2cx4
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/abandoned-object-t0t8l/abandoned-object-detection-u2cx4/dataset/2
+
+# yolo export model=runs/detect/train3/weights/best.pt format=onnx opset=17
+# yolo export model=runs/detect/train3/weights/best.pt format=torchscript
