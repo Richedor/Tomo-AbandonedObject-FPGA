@@ -20,7 +20,7 @@ It combines **FPGA pre-processing** (motion gating + resize/letterbox) on **Zybo
 	<!-- Prefer PNG (generated via scripts/gen_arch_png.py) for GitHub readability -->
 	<img src="docs/system_architecture.png" alt="Tomo system architecture diagram" width="720" />
   <br/>
-  <sub><em>Source SVG: docs/system_architecture.svg (edit) • Regenerate PNG: </em></sub>
+  <sub><em>Source SVG: docs/system_architecture.png </em></sub>
 </p>
 
 ## 🖼 Example Detection
