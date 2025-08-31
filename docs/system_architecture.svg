@@ -2,8 +2,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" font-family="Arial, Helvetica, sans-serif">
   <style>
     .box { fill:#eef0ff; stroke:#000; stroke-width:2; }
-    .title { font-size:18px; font-weight:bold; }
-    .text { font-size:14px; }
+    .title { font-size:22px; font-weight:bold; }
+    .text { font-size:16px; }
     .mono { font-family: monospace; }
     .arrow { stroke:#000; stroke-width:2; marker-end:url(#arrowhead); }
   </style>
@@ -21,16 +21,16 @@
   <!-- FPGA -->
   <rect class="box" x="270" y="60" width="300" height="180" rx="6" />
   <text x="420" y="95" text-anchor="middle" class="title">FPGA (PL)</text>
-  <text x="420" y="125" text-anchor="middle" class="text">Capture MIPI</text>
-  <text x="420" y="150" text-anchor="middle" class="text">MotionGate (WIP)</text>
-  <text x="420" y="175" text-anchor="middle" class="text">Resize + Letterbox</text>
+  <text x="420" y="130" text-anchor="middle" class="text">Capture MIPI</text>
+  <text x="420" y="160" text-anchor="middle" class="text">MotionGate (WIP)</text>
+  <text x="420" y="190" text-anchor="middle" class="text">Resize + Letterbox</text>
 
   <!-- PS -->
   <rect class="box" x="650" y="60" width="300" height="180" rx="6" />
   <text x="800" y="95" text-anchor="middle" class="title">PS (ARM Cortex-A9)</text>
-  <text x="800" y="125" text-anchor="middle" class="text">YOLOv8n INT8</text>
-  <text x="800" y="150" text-anchor="middle" class="text">NMS</text>
-  <text x="800" y="175" text-anchor="middle" class="text">Abandon logic</text>
+  <text x="800" y="130" text-anchor="middle" class="text">YOLOv8n INT8</text>
+  <text x="800" y="160" text-anchor="middle" class="text">NMS</text>
+  <text x="800" y="190" text-anchor="middle" class="text">Abandon logic</text>
 
   <!-- Outputs -->
   <rect class="box" x="1000" y="100" width="160" height="100" rx="4" />
